@@ -6,95 +6,148 @@
     <link rel = "stylesheet" type="text/css" href="style.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
-    <title> Yunseon's homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* 이미지 컨테이너 스타일 */
+        .image-container {
+            text-align: center; /* 내부 요소를 가로로 가운데 정렬 */
+        }
+
+        /* 이미지 스타일 */
+        .image-container img {
+            max-width: 100%; /* 이미지가 컨테이너의 최대 너비에 맞게 조정 */
+            display: block; /* 인라인 요소가 아닌 블록 요소로 설정하여 수직 정렬을 위한 여백을 줌 */
+            margin: 0 auto; /* 가로 가운데 정렬을 위해 왼쪽과 오른쪽 마진을 자동으로 설정 */
+        }
+    </style>
+
+    <style>
+        boby {
+            background-color: rgb(255, 255, 224);
+            margin: 0; /* 페이지의 기본 마진 제거 */
+            padding: 0; /* 페이지의 기본 패딩 제거 */
+        }
+    </style>
+
+    <style>
+        /* 사이드바 스타일 */
+        .sidebar {
+            height: 145%;
+            width: 250px; /* 사이드바의 너비를 조정할 수 있습니다. */
+            position: absolute;
+            left: 0;
+            padding-top: 0px;
+            overflow-y: auto;
+        }
+
+        /* 사이드바 내부 링크 스타일 */
+        .sidebar a {
+            background-color: rgb(255, 255, 197);
+            text-decoration: none;
+            text-align: center;
+            font-size: 45px;
+            color: rgb(0, 0, 0);
+            display: block;
+            height: 85px;
+        }
+
+        /* 사이드바 내부 링크 hover 스타일 */
+        .sidebar a:hover {
+            background-color: #fff985;
+        }
+
+        /* 본문 내용과 사이드바 사이 여백 조정 */
+        .content {
+            margin-left: 80px; /* 사이드바의 너비와 동일하게 설정합니다. */
+            padding: 60px;
+        }
+    </style>
+
+    <title> Yunseon's homepage </title>
 
 </head>
 
 <body>
     <div id="header">
-        <h1><strong>Introduce Myself</h1>
+        <h1>
+            <strong>Yunseon's homepage</strong>
+            <i class="fa-solid fa-house"></i>
+
+        </h1>
     </div>
 
-    <div id="wrap">
-        <div id="aside">
-            <h2>First Information</h2>
-        </div>
-        <div id="content">
-            <p>
-                <ul>
-                    <li>이름 : 장윤선</li>
-                    <li>생년월일 : 040506</li>
-                    <li><a href="https://terms.naver.com/entry.naver?docId=6633515&cid=69895&categoryId=69895" target="_blank" title = "윤선이의 MBTI">MBTI</a></li>
-                    <li>혈액형 : A형</li>
-                    
-            </p>
-        </div>
-    </div>  
+    <nav>
+        <ul>
+            <li><a href="https://www.notion.so/Study-record-e58b22034870440397dbd6709b16471e?pvs=4 " target="_blank" title=" 윤선이의 노션">notion</a></li>
+            <li><a href="https://www.instagram.com/yoonn_sunn/" target="_blank"  title = "윤선이의 인스타">instagram</a></li>
+            <li><a href="https://drive.google.com/file/d/1-2Hnz688HOO-iPwayZ4_r_gx2h8Qdrda/view?usp=drive_link" target="_blank" title=" 윤선이의 카카오톡">kakao</a></li>
+            <li><a href="https://github.com/yunseonyy" target="_blank" title=" 윤선이의 깃" >git</a></li>
+        </ul>
+    </nav>
 
-    <div id="wrap">
-        <div id="aside">
-            <h2>Second Information</h2>
-        </div>
-        <div id="content">
-            <p>
+        <!-- 사이드바 -->
+    <div class="sidebar">
+        <a href="#" style="height:1500px; font-size: 180px; padding-top: 480px;">자기소개</a>
+        <a href="https://terms.naver.com/entry.naver?docId=6633515&cid=69895&categoryId=69895" target="_blank" title = "윤선이의 MBTI" style="padding-top: 150px;">MBTI</a>
+        <a href="https://naver.me/FsqYurlN" target="_blank" title = "윤선이가 사는 곳" style="padding-top: 150px;">Home</a>
+        <a href="#" style="padding-top: 150px;">Songs</a>
+        
+        <!-- 필요한 만큼의 링크를 추가할 수 있습니다. -->
+    </div>
+
+    <div class="image-container">
+        <img src="kakao.jpg">
+    </div>
+
+    <p>
+        <ul>
+            <li>이름 : 장윤선</li>  
+            <li>생년월일 : 5월 6일</li>
+            <li>혈액형 : A형</li>
+            <li>키 : 166cm</li>
+        </ul>
+
+        <ul>
+            <li class="introduction">
+                <strong>First information</strong>
                 <ul>
                     <li>좋아하는 계절 : 봄, 가을</li>
-                    <li>좋아하는 음식 : 고기,마라, 한식</li>
-                    <li>좋아하는노래 : 버스정류장-릴러말즈,미노이
-                        <br>
-                        <br>
-                        <div><iframe width="540" height="260" src="https://www.youtube.com/embed/6C7m58TCSGQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </video></li>
-                    
-            </p>
-        </div>
-    
-        <div id="wrap">
-            <div id="aside">
-                <h2>Third Information</h2>
-            </div>
-            <div id="content">
-                <p>
-                    <ul>
-                        <li>키 : 166cm</li>
-                        <li>취미 : 독서, OTT 보기</li>
-                        <li><a href="https://naver.me/FsqYurlN" target="_blank" title = "윤선이가 사는 곳">사는 곳</a></li>
-                        <li>가족 구성원 : 엄마, 아빠 , 오빠</li>
-                        
-                </p>
-            </div>
-        </div>  
+                    <li>좋아하는 음식 : 고기, 한식, 마라</li>
+                    <li>가족 구성원 : 엄마, 아빠, 오빠</li>
+                    <li>취미 : 독서 ,OTT 시청</li>
+                </ul>
+            </li>
+        </ul>
 
-        <div id="wrap">
-            <div id="aside">
-                <h2>Additional Information</h2>
-            </div>
-            <div id="content">
-                <p>
-                    <table border="1">
-                        <thread>
-                            <tr>
-                                <th>초등학교</th>
-                                <th>중학교</th>
-                                <th>고등학교</th>
-                                <th>대학교</th>
-                            </tr>
-                        </thread>
-                        <tbody>
-                            <tr>
-                                <td>목암초등학교</td>
-                                <th>목암중학교</th>
-                                <th>고양일고</th>
-                                <th>광운대학교</th>
-                            </tr>
-                        </tbody>
-                    </table> 
-                        
-                </p>
-            </div>
-        </div> 
+        <ul>
+            <li class="introduction">
+                <strong>Second Information</strong>
+                <ul>
+                    <li>초등학교 : 목암초등학교</li>
+                    <li>중학교 : 목암중학교</li>
+                    <li>고등학교 : 고양일고</li>
+                    <li>대학교 : 광운대학교</li>
+
+                </ul>
+            </li>
+        </ul>
+
+        <ol>
+            <li class="introduction">
+                <strong>2024년 목표 !! </strong>
+                <ol>
+                    <li>성적 4.0이상</li>
+                    <li>책 25권 이상 읽기</li>
+                    <li>저축 nnn만원 이상 저축</li>
+                    <li>방꾸미기, 다이어트</li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+
+    
 
             <footer>
                 <p>
